@@ -19,6 +19,7 @@ const [image, setImage] = useState('');
       includeBase64: true,
       compressImageQuality: 0.8,
     }).then((image) => {
+      console.log(image)
         setImage(image)
     });
   };
