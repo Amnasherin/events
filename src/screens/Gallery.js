@@ -5,6 +5,9 @@ import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import GridImageView from 'react-native-grid-image-viewer';
 
   const Gallery = ({navigation}) => {
+    useEffect(() => {
+      console.log('gallery');
+    }, []);
    const image = [
      'https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
      'https://images.pexels.com/photos/1587927/pexels-photo-1587927.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
