@@ -4,12 +4,21 @@ import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const ChangePassword = ({navigation}) => {
+    const [Password, setPassword] = useState('');
     return(
-        <View style={styles.container}>
-            <Text>ChangePassword</Text>
-        </View>
+      <View style={styles.container}>
+      <View style={styles.header}>
+                <Icon name='arrow-left' size={wp('7%')} style={styles.arrow} onPress={() => {
+                    navigation.navigate('Settings');
+                }} />
+                <Text style={styles.headerText}>Reset Password</Text>
+                </View>
+                <View style={styles.seperator} />
+            <View style={styles.directionRow} >
+           </View>
+           </View>
     )
-}
+        }
 
 const styles = StyleSheet.create({
     container: {
